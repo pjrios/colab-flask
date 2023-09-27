@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Result</title>
+    <style>
+        /* Reset some default styles for consistency */
+        body, h1, form {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply some basic styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: inline;
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        /* Style the header */
+        h1 {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Style the result container */
+        .container {
+            text-align: center; /* Center content horizontally */
+            margin-top: 30px;
+        }
+
+        .result-box {
+            max-width: 600px;
+            min-width: 400px;
+            padding: 30px;
+            padding-left: 90px;
+            padding-right: 90px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: inline-block; /* Display form as an inline-block */
+            text-align: left; /* Reset text alignment */
+            margin: 0 auto; /* Center the result box horizontally */
+        }
+
+        /* Style the result text */
+        p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Style the "Go back" link */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Make the "Go back" link stand out a bit */
+        a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math Result</h1>
+    <div class="container">
+        <div class="result-box">
+            <p>The result of the operation is: {{ result }}</p>
+            <a href="/">Go back</a>
+        </div>
+    </div>
+</body>
+</html>

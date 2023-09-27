@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Operations</title>
+</head>
+<style>
+  /* Reset some default styles for consistency */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: inline;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style the form container */
+.container {
+    text-align: center; /* Center content horizontally */
+    margin-top:30px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px; /* Adjust the margin-top as needed */
+    margin-left: 30%; /* Add a 30% left margin */
+    margin-right: 30%; /* Add a 30% right margin */
+}
+
+form {
+    max-width: 600px;
+    min-width: 400px;
+    padding: 30px;
+    padding-left:90px;
+    padding-right:90px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Display form as an inline-block */
+    text-align: left; /* Reset text alignment */
+}
+
+/* Style form labels and input elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Make the form responsive */
+@media (max-width: 768px) {
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+</style>
+<body>
+    <div class="title">
+      <h1>Math Operations</h1>
+    </div>
+    <br>
+    <div class="container">
+      <form method="POST">
+          <label for="num1">Number 1:</label>
+          <input type="number" name="num1" required>
+          <br>
+          <label for="num2">Number 2:</label>
+          <input type="number" name="num2" required>
+          <br>
+          <label for="operation">Operation:</label>
+          <select name="operation">
+              <option value="add">Addition (+)</option>
+              <option value="subtract">Subtraction (-)</option>
+              <option value="multiply">Multiplication (*)</option>
+              <option value="divide">Division (/)</option>
+          </select>
+          <br>
+          <input type="submit" value="Calculate">
+      </form>
+    </div>
+</body>
+</html>
